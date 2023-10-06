@@ -12,3 +12,14 @@ This will keep gitpod task file clean and neat.. this will help us debug issues 
 
 Path for the script is [./bin/install_terraform_cli](./bin/install_terraform_cli)
 
+## List Env Variables
+This can be done by env command at bash terminal
+## Export Variable on the command
+export VARIABLE='value'
+## Making Variables as part of the script
+We can make it happen by mentioing in env file, This is more of documenation than really used in install_terraform bash script
+
+## Making Env Vars as part of gitpod as secret we can mention it like 
+
+gp env VARIABLE='value'
+
