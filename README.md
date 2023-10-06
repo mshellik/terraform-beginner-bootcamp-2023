@@ -23,3 +23,15 @@ We can make it happen by mentioing in env file, This is more of documenation tha
 
 gp env VARIABLE='value'
 
+## This is to refactor and install AWS CLI from below link and also to create AWS account and create ACCESS KEY and SECRET KEYS from below links
+
+https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+
+https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
+
+To confirm the configs are OK and AWS access keys work and have connectivity to AWS, can be checked by below command
+
+aws sts get-caller-identity
+
+
+
