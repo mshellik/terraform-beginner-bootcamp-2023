@@ -84,6 +84,10 @@ This file should not be commited to Version Control System as this has sensitive
 
 `terraform.tfstate.backup` is backup file in case required. 
 
+### S3 Bucket creation
+Created S3 bucket with AWS provisioners  and also the same was destryoed by 
+Terraform Destroy
+
 
 
 
