@@ -50,6 +50,44 @@ To confirm the configs are OK and AWS access keys work and have connectivity to 
 
 aws sts get-caller-identity
 
+## Terraform Basics
+
+Terraform basics can be found 
+[registry.terraform.io/](https://registry.terraform.io/)
+What are **providers**: 
+They are API's written by Vendors for Making Terraform API's to talk to the resources of Vendors. May it be cloud or any other Tech stack Vendors
+
+What are Modules?
+- **Modules** are set of files grouped together for a specific set of tasks. All files are interdependent on each other for that specific tasks . this is no different than module of a Programming language like python. which will help us work on specific data type for specific need and its all pre-written. One can write their own modules based on the type of taks performed. They are shareable and portable
+
+## Terraform Commands
+Just by running Terraform, we will get options and arguments to the command 
+
+## Terraform Init
+To Initialize  Terraform by running the terraform command to download the required binaries of providers that will be used in that project
+
+## Terraform Plan .
+This will generate Change Set about the state of our infrastructure. Pointing out which resources will be created / deleted / modified, if apply executed.
+We can output this to file to be passed to Apply command to have the resources provisioned
+
+# Terraform apply
+This will provision provided you confirm the resources creation or deletion 
+We can also provide auto approve flag to do it without prompting us .
+
+## Terraform Hardware lock file
+It's designed to record the exact package versions used to satisfy each provider requirement in your configuration. This ensures that every member of your team and your deployment systems use the same provider versions, avoiding inconsistencies and potential bugs.0
+
+## Terraform TF State file
+The terraform state file, by default, is named `terraform.tfstate` and is held in the same directory where Terraform is run. It is created after running terraform apply . The actual content of this file is a JSON formatted mapping of the resources defined in the configuration and those that exist in your infrastructure.
+
+This file should not be commited to Version Control System as this has sensitive info.
+
+`terraform.tfstate.backup` is backup file in case required. 
+
+
+
+
+
 
 
 >>>>>>> main
