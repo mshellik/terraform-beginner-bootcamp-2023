@@ -89,6 +89,14 @@ Created S3 bucket with AWS provisioners  and also the same was destryoed by
 Terraform Destroy
 
 
+# Terraform Login issues
+
+When Terraform clooud was logged in from CLI .. it needs a token  to authenticate. which has to be derived from Terraform Cloud url
+
+The file is saved in this location.
+### /workspace/terraform-beginner-bootcamp-2023/tokens?source=terraform-login
+
+Loging on to Terraform cloud from CLI was one of the toughest thing and it has consumed lot of my time
 
 
 
