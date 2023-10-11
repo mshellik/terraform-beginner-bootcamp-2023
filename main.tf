@@ -28,7 +28,6 @@ output "random_string_output" {
 
 resource "aws_s3_bucket" "example" {
   bucket = random_string.bucket_name.result
-
 }
 
 output "aws_s3_bucket_example" {
